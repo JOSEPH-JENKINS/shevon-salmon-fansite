@@ -6,7 +6,7 @@
       <HeroImage />
     </div>
     <section class="sm:col-span-12 col-span-4 grid grid-cols-4 sm:grid-cols-12 h-screen">
-      <h1 class="font-bold md:text-[9rem] lg:text-[11rem] text-6xl leading-[.875] uppercase col-span-12">Okay...</h1><br />
+      <h1 class="font-bold md:text-[9rem] lg:text-[11rem] text-6xl uppercase col-span-12">Okay...</h1><br />
       <div class="col-start-1 col-end-5 sm:col-start-4 sm:col-end-12 text-lg font-sans">
         <p class="w-full">
           Shevon Salmon always had the vision to create a digital production company specializing in influencer facing content. We bridge the gap between brands and influencers by producing high-quality stories, skillfully integrating the goals and audiences of both.
