@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: NeutralReg;
+  src: url("../fonts/NHaasGroteskTXPro-55Rg.ttf");
+}
+
+@font-face{
+  font-family: NeutralBold;
+  src: url("../fonts/NHaasGroteskTXPro-75Bd.ttf");
+}
+
+@layer components{
+  .matrix3d{
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+}
