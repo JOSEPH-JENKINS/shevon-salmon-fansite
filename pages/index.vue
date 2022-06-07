@@ -25,6 +25,7 @@
       <img src="~/assets/img/shevon-5.jpg" class="w-full h-full object-cover" alt="">
       <img src="~/assets/img/shevon-hero.jpg" class="w-full h-full object-cover" alt="">
     </section>
+    <Footer />
   </main>
 </template>
 
