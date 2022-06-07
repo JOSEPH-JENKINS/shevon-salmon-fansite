@@ -17,7 +17,7 @@
         </p>
       </div>
     </section>
-    <section class="sm:col-span-12 col-span-4 h-screen sm:h-[150vh] grid grid-cols-1 grid-rows-5 sm:grid-cols-3 sm:grid-rows-2 gap-x-1 gap-y-1">
+    <section class="sm:col-span-12 col-span-4 h-[150vh] sm:h-screen grid grid-cols-1 grid-rows-5 sm:grid-cols-3 sm:grid-rows-2 gap-x-1 gap-y-1">
       <img src="~/assets/img/shevon-1.jpg" class="w-full h-full object-cover" alt="">
       <img src="~/assets/img/shevon-2.jpg" class="w-full h-full object-cover" alt="">
       <img src="~/assets/img/shevon-3.jpg" class="w-full h-full object-cover" alt="">
