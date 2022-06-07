@@ -3,8 +3,6 @@
     <h1 class="font-bold md:text-[9rem] lg:text-[11rem] text-6xl uppercase leading-[.875]">
       <span>Digital</span>
       <span>Creator</span>
-      <span>200K</span><br>
-      <span>Subscribers</span>
     </h1>
   </div>
 </template>
