@@ -3,7 +3,7 @@
     <div class="relative w-full h-full">
       <div class="logo absolute top-1/2 -translate-y-1/2">
         <span>
-          <h1 class="font-bold text-black md:text-base uppercase mix-blend-difference">shevon salmon</h1>
+          <h1 class="font-bold text-white md:text-base uppercase mix-blend-difference">shevon salmon</h1>
         </span>
       </div>
     </div>
