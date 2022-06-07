@@ -1,5 +1,5 @@
 <template>
-  <main class="grid grid-cols-4 px-6 sm:grid-cols-12 h-screen w-screen overflow-x-hidden">
+  <main class="grid grid-cols-4 px-6 sm:grid-cols-12 h-screen w-screen overflow-x-hidden bg-black text-white">
     <Nav />
     <div class="relative h-screen sm:col-span-12 col-span-4">
       <HeroText />
