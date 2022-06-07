@@ -25,11 +25,6 @@
       <img src="~/assets/img/shevon-5.jpg" class="w-full h-full object-cover" alt="">
       <img src="~/assets/img/shevon-hero.jpg" class="w-full h-full object-cover" alt="">
     </section>
-    <section class="sm:col-span-12 h-56 flex justify-center items-center col-span-4">
-      <div class="font-sans text-base">
-        So what's up y'all, It's your boy Shevon and guess what? I got a <span><h1 class="font-bold text-pink-500">Gumroad</h1></span> store. Go check out my icons and wallpapers.
-      </div>
-    </section>
   </main>
 </template>
 
