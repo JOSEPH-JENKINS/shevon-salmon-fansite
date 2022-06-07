@@ -17,13 +17,19 @@
         </p>
       </div>
     </section>
-    <section class="sm:col-span-12 col-span-4 h-[150vh] sm:h-screen grid grid-cols-1 grid-rows-5 sm:grid-cols-3 sm:grid-rows-2 gap-x-1 gap-y-1">
+    <section class="sm:col-span-12 col-span-4 h-[150vh] mb-12 sm:h-screen grid grid-cols-1 grid-rows-5 sm:grid-cols-3 sm:grid-rows-2 gap-x-1 gap-y-1">
       <img src="~/assets/img/shevon-1.jpg" class="w-full h-full object-cover" alt="">
       <img src="~/assets/img/shevon-2.jpg" class="w-full h-full object-cover" alt="">
       <img src="~/assets/img/shevon-3.jpg" class="w-full h-full object-cover" alt="">
       <img src="~/assets/img/shevon-4.jpg" class="w-full h-full object-cover" alt="">
       <img src="~/assets/img/shevon-5.jpg" class="w-full h-full object-cover" alt="">
       <img src="~/assets/img/shevon-hero.jpg" class="w-full h-full object-cover" alt="">
+    </section>
+    <section class="sm:col-span-12 h-56 flex justify-center items-center col-span-4">
+      <p class="font-sans text-2xl">
+        So what's up y'all, It's your boy Shevon and guess what? I got a 
+        <span><h1 class="font-bold text-pink-500">Gumroad</h1></span> store. Go check out my icons and wallpapers.
+      </p>
     </section>
   </main>
 </template>
