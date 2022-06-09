@@ -27,7 +27,7 @@
           </p>
         </div>
       </section>
-      <section class="sm:col-span-12 col-span-4 relative">
+      <section class="sm:col-span-12 col-span-4 relative h-[50vh]">
         <div class="videos-text-wrapper mb-10">
           <h2 class="videos-text leading-[1.2] whitespace-nowrap text-center flex w-[300%] font-bold md:text-[9rem] lg:text-[11rem] text-6xl uppercase">
             <span class="mr-8 inline-block">I make YouTube Videos</span>
@@ -36,8 +36,11 @@
           </h2>
         </div>
         <div class="w-full">
-          <div class="card w-full h-48">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dWwQWvFg4i4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card w-full h-48 mb-6">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dWwQWvFg4i4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="card w-full h-48 mb-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RNeZ0BfdO-U?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </section>
