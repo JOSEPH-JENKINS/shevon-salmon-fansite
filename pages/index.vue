@@ -35,6 +35,11 @@
             <span class="mr-8 inline-block">I make youtube videos</span>
           </h2>
         </div>
+        <div class="w-full">
+          <div class="card w-full h-48">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dWwQWvFg4i4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
       </section>
       <section class="sm:col-span-12 col-span-4 mb-12 relative">
         <div class="w-full mb-12 h-full">
