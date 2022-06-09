@@ -8,7 +8,7 @@
       getSpeed: true,
       lerp: 0.1
     }">
-    <main class="grid grid-cols-4 px-6 sm:grid-cols-12 h-screen w-screen overflow-x-hidden relative bg-black text-white">
+    <main class="grid grid-cols-4 px-6 sm:grid-cols-12 overflow-x-hidden w-screen relative bg-black text-white">
       <Nav />
       <div class="relative h-screen sm:col-span-12 col-span-4 mb-12">
         <HeroText />
@@ -27,7 +27,7 @@
           </p>
         </div>
       </section>
-      <section class="sm:col-span-12 col-span-4">
+      <section class="sm:col-span-12 col-span-4 relative">
         <div class="videos-text-wrapper mb-10 overflow-hidden">
           <h2 class="videos-text leading-[1.2] whitespace-nowrap text-center flex w-[300%] font-bold md:text-[9rem] lg:text-[11rem] text-6xl uppercase">
             <span class="mr-8 inline-block">Videos I make</span>
@@ -37,7 +37,7 @@
         </div>
       </section>
       <section class="sm:col-span-12 col-span-4 mb-12 relative">
-        <div class="absolute w-full mb-12 h-full">
+        <div class="w-full mb-12 h-full">
           <div class="md:h-[30rem] h-96 w-full relative mb-6">
             <div class="h-full md:w-[40%] w-3/4 absolute left-0">
               <img src="~/assets/img/shevon-1.jpg" class="h-full w-full object-cover" alt="">
@@ -107,7 +107,7 @@ export default {
       });
     },
     marqueeTextAnimation() {
-      console.log("yeah!")
+      console.log(window.innerHeight);
       gsap.to(".videos-text", {
         scrollTrigger: {
           trigger: ".videos-text-wrapper",
