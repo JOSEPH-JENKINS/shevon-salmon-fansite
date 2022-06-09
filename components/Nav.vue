@@ -1,5 +1,5 @@
 <template>
-  <div class="z-50 fixed w-screen h-20 px-6 top-0 left-0 bg-transparent">
+  <div class="z-50 fixed w-full left-0 h-20 pl-6 pr-10 top-0 bg-transparent">
     <div class="relative w-full h-full bg-transparent">
       <div class="logo absolute top-1/2 -translate-y-1/2 bg-transparent">
         <span class="bg-transparent">
