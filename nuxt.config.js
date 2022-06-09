@@ -49,6 +49,7 @@ export default {
         tailwindcss: {},
         autoprefixer: {},
       }
-    }
+    },
+    transpile: ["gsap"]
   }
 }

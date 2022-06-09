@@ -27,6 +27,15 @@
           </p>
         </div>
       </section>
+      <section class="sm:col-span-12 col-span-4">
+        <div class="videos-text-wrapper mb-10 overflow-hidden">
+          <h2 class="videos-text leading-[1.2] whitespace-nowrap text-center flex w-[300%] font-bold md:text-[9rem] lg:text-[11rem] text-6xl uppercase">
+            <span class="mr-8 inline-block">Videos I make</span>
+            <span class="mr-8 inline-block">Videos I make</span>
+            <span class="mr-8 inline-block">Videos I make</span>
+          </h2>
+        </div>
+      </section>
       <section class="sm:col-span-12 col-span-4 mb-12 relative">
         <div class="absolute w-full mb-12 h-full">
           <div class="md:h-[30rem] h-96 w-full relative mb-6">
@@ -61,7 +70,55 @@
 </template>
 
 <script>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default {
   name: 'IndexPage',
+  mounted() {
+    this.startScrollTrigger();
+    this.marqueeTextAnimation();
+
+    this.$nuxt.$emit("update-locomotive");
+  },
+  methods: {
+    startScrollTrigger() {
+      const locomotive = this.$refs.scroller.locomotive;
+      locomotive.on("scroll", ScrollTrigger.update);
+
+      ScrollTrigger.scrollerProxy(locomotive.el, {
+        scrollTop(value){
+          return arguments.length ? locomotive.scrollTo(value, 0, 0) : locomotive.scroll.instance.scroll.y;
+        },
+        scrollLeft(value){
+          return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.x;
+        },
+
+        getBoundingClientRect() {
+          return {
+            top: 0,
+            left: 0,
+            width: window.innerWidth,
+            height: window.innerHeight
+          };
+        }
+      });
+    },
+    marqueeTextAnimation() {
+      console.log("yeah!")
+      gsap.to(".videos-text", {
+        scrollTrigger: {
+          trigger: ".videos-text-wrapper",
+          scroller: this.$refs.scroller.locomotive.el,
+          scrub: true,
+          start: "top 90%",
+          end: "bottom 10%"
+        },
+        xPercent: -50
+      })
+    }
+  }
 }
 </script>
