@@ -3,7 +3,10 @@
     ref="scroller"
     :getted-options="{
       offset: ['30%', 0],
-      direction: 'vertical'
+      direction: 'vertical',
+      smooth: true,
+      getSpeed: true,
+      lerp: 0.1
     }">
     <main class="grid grid-cols-4 px-6 sm:grid-cols-12 h-screen w-screen overflow-x-hidden relative bg-black text-white">
       <Nav />
