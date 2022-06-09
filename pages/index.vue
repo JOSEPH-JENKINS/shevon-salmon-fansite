@@ -18,22 +18,22 @@
       </div>
     </section>
     <section class="sm:col-span-12 col-span-4 mb-12 flex flex-wrap">
-      <div class="h-56 w-full mb-12">  
+      <div class="h-96 w-full mb-6">  
         <img src="~/assets/img/shevon-1.jpg" class="w-full h-full object-cover" alt="">
       </div>
-       <div class="h-56 w-full mb-12">  
+       <div class="h-96 w-full mb-6">  
         <img src="~/assets/img/shevon-2.jpg" class="w-full h-full object-cover" alt="">
       </div>
-       <div class="h-56 w-full mb-12">  
+       <div class="h-96 w-full mb-6">  
         <img src="~/assets/img/shevon-3.jpg" class="w-full h-full object-cover" alt="">
       </div>
-       <div class="h-56 w-full mb-12">  
+       <div class="h-96 w-full mb-6">  
         <img src="~/assets/img/shevon-4.jpg" class="w-full h-full object-cover" alt="">
       </div>
-       <div class="h-56 w-full mb-12">  
+       <div class="h-96 w-full mb-6">  
         <img src="~/assets/img/shevon-5.jpg" class="w-full h-full object-cover" alt="">
       </div>
-       <div class="h-56 w-full mb-12">  
+       <div class="h-96 w-full mb-6">  
         <img src="~/assets/img/shevon-hero.jpg" class="w-full h-full object-cover" alt="">
       </div>
     </section>
