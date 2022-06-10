@@ -11,7 +11,15 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { 
+        hid: 'description', 
+        name: 'description', 
+        content: "Shevon Salmon is a digital creator from Jamaica giving the tech space the real OG vibe!" },
+      {
+        property: "og:image",
+        hid: "og:image",
+        content: "https://instagram.flos5-1.fna.fbcdn.net/v/t51.2885-15/274331807_128925189646582_7671437095064775413_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=instagram.flos5-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=zRZ3QM-N0tMAX9mAsX8&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjc3ODA4NTUyMDc0NjQ1NTcyMw%3D%3D.2-ccb7-5&oh=00_AT_PW-d5XSEbraIV8nunM49mpUKnywAq3U6zSP22CkWmig&oe=62AB2BE1&_nc_sid=30a2ef"
+      },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
