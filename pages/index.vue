@@ -34,11 +34,11 @@
             <span class="mr-8 inline-block">I make youtube videos</span>
           </h2>
         </div>
-        <div class="w-full flex justify-between">
-          <div class="card md:w-[40%] h-96 mb-6 frame">
+        <div class="w-full md:flex md:justify-between">
+          <div class="card md:w-[40%] w-full h-96 mb-6 frame">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dWwQWvFg4i4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="card md:w-[40%] h-96 mb-6 frame">
+          <div class="card md:w-[40%] w-full h-96 mb-6 frame">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RNeZ0BfdO-U?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
@@ -149,7 +149,6 @@ export default {
           scrub: true,
           start: "top 90%",
           end: "bottom -10%",
-          markers: true
         },
         y: 80,
         ease: Power4.easeInOut
@@ -165,7 +164,6 @@ export default {
           scrub: true,
           start: "top 20%",
           end: "bottom 50%",
-          markers: true
         },
         opacity: 1,
         y: 0,
@@ -182,7 +180,6 @@ export default {
           scrub: true,
           start: "top 90%",
           end: "bottom -10%",
-          markers: true
         },
         y: 100
       })
