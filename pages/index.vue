@@ -26,7 +26,7 @@
           </p>
         </div>
       </section>
-      <section class="sm:col-span-12 col-span-4 relative h-screen mb-40">
+      <section class="sm:col-span-12 col-span-4 relative h-screen md:mb-28 mb-56">
         <div class="videos-text-wrapper mb-10">
           <h2 class="videos-text leading-[1.2] whitespace-nowrap text-center flex w-[300%] font-bold md:text-[9rem] lg:text-[11rem] text-6xl uppercase">
             <span class="mr-8 inline-block">I make YouTube Videos</span>
