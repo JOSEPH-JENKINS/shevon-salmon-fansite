@@ -10,7 +10,7 @@
         <span class="bg-transparent">
           <h1 class="font-bold text-white md:text-base uppercase mix-blend-difference">
             <span><a href="http://instagram.com/shevonsalmon_">INSTA</a></span>,
-            <span><a href="http://twitter.com/its_shevi">TWitter</a></span>,
+            <span><a href="http://twitter.com/its_shevi">TWitter</a></span>
           </h1>
         </span>
       </div>
