@@ -181,7 +181,7 @@ export default {
           trigger: container,
           scroller: this.$refs.scroller.locomotive.el,
           scrub: true,
-          start: "top 90%",
+          start: "top 50%",
           end: "bottom -10%",
         },
         yPercent: -20,
