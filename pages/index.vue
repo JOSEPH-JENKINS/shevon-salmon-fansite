@@ -15,8 +15,8 @@
         <HeroImage />
       </div>
       <section class="sm:col-span-12 col-span-4 grid grid-cols-4 sm:grid-cols-12 h-[90vh] mb-12 about-section">
-        <h1 class="font-bold md:text-[9rem] lg:text-[11rem] text-6xl uppercase col-span-12">Okay...</h1><br />
-        <h1 class="font-bold md:text-[9rem] lg:text-[11rem] text-right text-6xl uppercase col-span-12">So who?</h1><br />
+        <h1 class="font-bold md:text-[9rem] lg:text-[11rem] text-6xl uppercase col-span-12 about-headline">Okay...</h1><br />
+        <h1 class="font-bold md:text-[9rem] lg:text-[11rem] text-right text-6xl uppercase col-span-12 about-headline-2">So who?</h1><br />
         <div class="col-start-1 col-end-5 sm:col-start-4 sm:col-end-12 text-sm sm:text-lg text-gray-300 font-sans">
           <p class="w-full about">
             Shevon Salmon always had the vision to create a digital production company specializing in influencer facing content. We bridge the gap between brands and influencers by producing high-quality stories, skillfully integrating the goals and audiences of both.
@@ -45,28 +45,28 @@
       </section>
       <section class="sm:col-span-12 col-span-4 mb-12 relative gallery">
         <div class="w-full mb-12 h-full">
-          <div class="md:h-[30rem] h-96 w-full relative mb-6">
+          <div class="md:h-[30rem] h-96 w-full relative mb-6 img-c">
             <div class="h-full md:w-[40%] w-3/4 absolute img left-0">
               <img src="~/assets/img/shevon-1.jpg" class="h-full w-full object-cover" alt="">
             </div>
           </div>
-          <div class="md:h-[30rem] h-96 w-full relative mb-6">
+          <div class="md:h-[30rem] h-96 w-full relative mb-6 img-c">
             <div class="h-full md:w-[40%] w-3/4 absolute img right-0">
               <img src="~/assets/img/shevon-3.jpg" class="h-full w-full object-cover" alt="">
             </div>
           </div>
-          <div class="md:h-[30rem] h-96 w-full relative mb-6">
+          <div class="md:h-[30rem] h-96 w-full relative mb-6 img-c">
             <div class="h-full md:w-[40%] w-3/4 absolute img left-0">
               <img src="~/assets/img/shevon-4.jpg" class="h-full w-full object-cover" alt="">
             </div>
           </div>
-          <div class="md:h-[30rem] h-96 w-full relative mb-6">
+          <div class="md:h-[30rem] h-96 w-full relative mb-6 img-c">
             <div class="h-full md:w-[40%] w-3/4 absolute img right-0">
               <img src="~/assets/img/shevon-5.jpg" class="h-full w-full object-cover" alt="">
             </div>
           </div>
-          <div class="md:h-[30rem] h-96 w-full relative img mb-6">
-            <div class="h-full md:w-[40%] w-3/4 absolute left-0">
+          <div class="md:h-[30rem] h-96 w-full relative mb-6 img-c">
+            <div class="h-full md:w-[40%] w-3/4 absolute img left-0">
               <img src="~/assets/img/shevon-hero.jpg" class="h-full w-full object-cover" alt="">
             </div>
           </div>
@@ -90,6 +90,8 @@ export default {
     this.marqueeTextAnimation();
     this.heroImageAnimation();
     this.aboutTextAnimation();
+    this.aboutHeadlineAnimation();
+    this.galleryAnimation();
 
     this.$nuxt.$emit("update-locomotive");
   },
@@ -167,23 +169,48 @@ export default {
         },
         opacity: 1,
         y: 0,
-        stagger: 1,
+        stagger: .25,
         ease: Power4.easeInOut,
         duration: 10
       })
     },
     galleryAnimation() {
-      gsap.to(".img", {
-        scrollTrigger: {
-          trigger: ".gallery",
+      document.querySelectorAll(".img-c").forEach(container => {
+        gsap.to(container.querySelector(".img"), {
+          scrollTrigger: {
+          trigger: container,
           scroller: this.$refs.scroller.locomotive.el,
           scrub: true,
           start: "top 90%",
           end: "bottom -10%",
         },
-        y: 100
-      })
+        yPercent: -20,
+        ease: Power4.easeInOut,
+        })
+      });
     },
+    aboutHeadlineAnimation() {
+      gsap.to(".about-headline", {
+        scrollTrigger: {
+          trigger: ".about-section",
+          scroller: this.$refs.scroller.locomotive.el,
+          scrub: true,
+          start: "top 90%",
+          end: "bottom -10%",
+        },
+        xPercent: -10
+      })
+      gsap.to(".about-headline-2", {
+        scrollTrigger: {
+          trigger: ".about-section",
+          scroller: this.$refs.scroller.locomotive.el,
+          scrub: true,
+          start: "top 90%",
+          end: "bottom -10%",
+        },
+        xPercent: 10
+      })
+    }
   }
 }
 </script>
